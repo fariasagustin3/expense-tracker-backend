@@ -42,7 +42,6 @@ public class AuthController {
 
             // guardar el usuario en la base de datos
             authService.createUser(user);
-            System.out.println(user.toString());
 
             UserDTO userCreated = new UserDTO(
                     user.getFirstName(),
